@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MetaBlog-Blog</title>
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .swiper {
+      width: 1216px;
+      height: 800px;
+      border-radius: 12px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar d-block">
+    <div class="navbar-wrapper">
+      <div class="logo-wrapper">
+        <img class="logo" src="./images/logo.svg" alt="" />
+      </div>
+      <div class="menu-container">
+        <ul class="menu-list m-0">
+          <li class="menu-list-item"><a href="#">Home</a></li>
+          <li class="menu-list-item"><a href="#">Blog</a></li>
+          <li class="menu-list-item"><a href="#">Single Post</a></li>
+          <li class="menu-list-item"><a href="#">Pages</a></li>
+          <li class="menu-list-item"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="searchbar-navbar">
+       
+        <form action="/arama-sonucu" method="get">
+            <input type="text" name="Search" placeholder="Search" class="search-container"/>
+        </form>
+
+   <img src="./images/search-outline.svg" class="search-image">
+</div>
+    </div>
+  </div>
+  <div class="swiper mySwiper">
+    <div class="image-div-technology">
+      <div class="technology">Technology</div>
+      <div class="technology-title">
+        The Impact of Technology on the Workplace: How Technology is Changing
+      </div>
+      <div class="short-info">
+        <img class="short-info-image" src="./images/short_info_image.png" />
+        <div class="author">Jason Francisco</div>
+        <div class="date">August 20, 2022</div>
+      </div>
+    </div>
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/contentIndex.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/contentIndex.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/contentIndex.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/contentIndex.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/contentIndex.png" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/contentIndex.png" alt="" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <div class="content-items">
+    <div class="advertisement">
+      <p>Advertisement</p>
+    </div>
+  </div>
+
+  <div class="posts-list">
+    <div class="posts-list-title">Latest Post</div>
+  </div>
+  <div class="posts">
+    <script>
+      var cardData = [
+        {
+          img: "images/rectangle.png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (1).png",
+          authorName: "Tracey Wilson",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (1).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/short_info_image.png",
+          authorName: "Jason Francisco",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (2).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (3).png",
+          authorName: "Elizabeth Slavain",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (3).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (2).png",
+          authorName: "Ernie Smith",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (4).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/short_info_image.png",
+          authorName: "Eric Smith",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (5).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (1).png",
+          authorName: " Ernie Smith",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (6).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (3).png",
+          authorName: "Eric Smith",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (7).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (2).png",
+          authorName: "Ernie Smith",
+          date: "August 20, 2022",
+        },
+        {
+          img: "images/Rectangle 38 (8).png",
+          categoryTitle: "Technology",
+          title:
+            "The Impact of Technology on the Workplace: How Technology is Changing",
+          authorImage: "images/Image (1).png",
+          authorName: "Jason Francisco",
+          date: "August 20, 2022",
+        },
+
+      ];
+
+      for (let i = 0; i < cardData.length; i++) {
+        if (i % 3 === 0) {
+          var cardGroupElement = document.createElement("div");
+          cardGroupElement.className = "card-group";
+          document.querySelector(".posts").appendChild(cardGroupElement);
+        }
+
+        var cardElement = document.createElement("div");
+        cardElement.className = "card";
+        cardElement.innerHTML = `
+          <img class="card-img-top" src="${cardData[i].img}" alt="Card image cap">
+        <div class="card-body">
+          <div ><p class="category-title">${cardData[i].categoryTitle}</p></div>
+          <h5 class="card-title">${cardData[i].title}</h5>
+          <div class="short-info">
+            <img class="short-info-image" src="${cardData[i].authorImage}" alt="Short Info Image">
+            <div class="authorCard">${cardData[i].authorName}</div>
+            <div class="dateCard">${cardData[i].date}</div>
+          </div>
+        </div>
+          `;
+        document
+          .querySelector(".card-group:last-child")
+          .appendChild(cardElement);
+      }
+    </script>
+
+    <div class="spaceads">
+      <div class="allPosts">
+         <p>View All Post</p>
+      </div>
+    </div>
+    <div class="content-items">
+      <div class="advertisement">
+        <p>Advertisement</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <footer class="py-5">
+      <div class="row class="p-2 g-col-6>
+        <div class="col-2 class="p-2 g-col-6>
+          <h5>About</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique dolorem ad autem suscipit dolores.</p>
+          <p> <strong>Email:</strong> furkan.metn17@gmail.com</p>
+          <p> <strong>Phone:</strong> 12231465484</p>
+        </div>
+  
+        <div class="col-2">
+          <h5>Quick Link</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Archived</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Author</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Category</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Life Style</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Technology</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Travel</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Business</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Economy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sports</a></li>
+
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Weekly Newsletter</h5>
+            <p>Get blog articles and offers via email.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"></label>
+              <input id="newsletter1" type="text" class="form-control email-input" placeholder="Email address">
+
+             
+            </div>
+          </form>
+          <button class="btn btn-primary btn-subscribe" type="button">Subscribe</button>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <div class="">
+        <img src="images/logo.svg" alt="">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+    </div>
+        <div class="bottom-items">
+      
+          <p>Terms of use</p> &nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Privacy Policy</p> &nbsp;&nbsp;&nbsp;&nbsp;
+          <p >Cookie Policy</p>&nbsp;&nbsp;&nbsp;&nbsp;
+     
+    </div>
+      </div>
+  </div>
+
+ 
+
+
+
+</body>
+
+</html>
