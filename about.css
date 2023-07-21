@@ -43,6 +43,7 @@
   list-style-type: none;
   column-gap: 50px;
   font-family: "Work Sans", sans-serif;
+  text-decoration: none;
 }
 
 .menu-list-item {
@@ -52,7 +53,14 @@
   line-height: 24px;
   cursor: pointer;
 }
+.menu-list-item a {
+  color: #181a2a;
+}
 
+.menu-list-item a:hover {
+  color: #181a2a;
+  text-decoration: none;
+}
 a:link {
   text-decoration: none;
   color: #3b3c4a;
@@ -79,10 +87,36 @@ a:link {
   gap: 24px;
 }
 
+.author-info .author-icon .link-style {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: var(--secondary-500, #696a75);
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.author-info .author-icon .link-style i {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+}
+
 .short-info {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.category-title {
+  width: 90px;
+  border-radius: 6px;
+  background: rgba(75, 107, 251, 0.05);
+  display: flex;
+  padding: 4px 5px;
+  align-items: center;
 }
 
 .short-info-image {
@@ -120,14 +154,7 @@ a:link {
   font-weight: 400;
   line-height: 26px;
 }
-.button-style {
-  padding: 6px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  border-radius: 6px;
-  background: var(--secondary-500, #696a75);
-}
+
 .posts-list-title {
   color: var(--secondary-800, #181a2a);
   font-family: Work Sans;
@@ -225,6 +252,7 @@ a:link {
 .footer {
   border-top: 1px solid var(--secondary-100, #e8e8ea);
   background: var(--secondary-50, #f6f6f7);
+  text-decoration: none;
 }
 .bottom-items {
   display: flex;

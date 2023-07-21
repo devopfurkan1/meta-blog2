@@ -53,6 +53,15 @@
   cursor: pointer;
 }
 
+.menu-list-item a {
+  color: #181a2a;
+}
+
+.menu-list-item a:hover {
+  color: #181a2a;
+  text-decoration: none;
+}
+
 a:link {
   text-decoration: none;
   color: #3b3c4a;
@@ -110,13 +119,11 @@ a:link {
 .technology-title {
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h1/Semibold */
   font-family: Work Sans;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
-  /* 111.111% */
 }
 
 .short-info {
@@ -158,13 +165,11 @@ a:link {
 .part1 {
   width: 804px;
   color: var(--secondary-600, #3b3c4a);
-  /* Article/lg/Regular */
   font-family: Source Serif Pro;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 160% */
   margin-left: 340px;
   margin-right: 330px;
 }
@@ -172,7 +177,6 @@ a:link {
 .part2-title {
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h3/Semibold */
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -185,13 +189,11 @@ a:link {
 .part2 {
   width: 804px;
   color: var(--secondary-600, #3b3c4a);
-  /* Article/lg/Regular */
   font-family: Source Serif Pro;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  /* 160% */
   margin-left: 340px;
   margin-right: 330px;
 }
@@ -199,7 +201,6 @@ a:link {
 .part3-title {
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h3/Semibold */
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -276,7 +277,6 @@ a:link {
   margin-top: 175px;
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h3/Semibold */
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -301,7 +301,6 @@ a:link {
 .part5-title {
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h3/Semibold */
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -326,7 +325,6 @@ a:link {
 .part6-title {
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h3/Semibold */
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -351,7 +349,6 @@ a:link {
 .part7-title {
   align-self: stretch;
   color: var(--secondary-800, #181a2a);
-  /* Heading/h3/Semibold */
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -371,6 +368,10 @@ a:link {
   line-height: 32px;
   margin-left: 340px;
   margin-right: 330px;
+}
+.footer {
+  border-top: 1px solid var(--secondary-100, #e8e8ea);
+  background: var(--secondary-50, #f6f6f7);
 }
 .bottom-items {
   display: flex;

@@ -25,6 +25,14 @@
   line-height: 24px;
   cursor: pointer;
 }
+.menu-list-item a {
+  color: #181a2a;
+}
+
+.menu-list-item a:hover {
+  color: #181a2a;
+  text-decoration: none;
+}
 
 a:link {
   text-decoration: none;
