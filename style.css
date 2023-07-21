@@ -89,6 +89,7 @@ a:link {
 
 .button-styles {
   border: none;
+  background-color: #fff;
 }
 
 .technology {
@@ -277,6 +278,10 @@ a:link {
   line-height: 24px;
 }
 .container {
+  border-top: 1px solid var(--secondary-100, #e8e8ea);
+  background: var(--secondary-50, #f6f6f7);
+}
+.footer {
   border-top: 1px solid var(--secondary-100, #e8e8ea);
   background: var(--secondary-50, #f6f6f7);
 }

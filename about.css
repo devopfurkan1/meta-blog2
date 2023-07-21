@@ -216,7 +216,6 @@ a:link {
 }
 .allPosts {
   color: var(--secondary-500, #696a75);
-
   font-family: Work Sans;
   font-size: 16px;
   font-style: normal;
